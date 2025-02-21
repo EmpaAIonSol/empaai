@@ -10,7 +10,7 @@ body {
 
 header {
     background: rgba(0, 0, 0, 0.7);
-    padding: 60px 20px;
+    padding: 60px 20px 40px;
     text-align: center;
     animation: slide-down 1s ease-out;
 }
@@ -22,9 +22,51 @@ header h1 {
 }
 
 header p {
-    margin: 0;
+    margin: 10px 0 30px;
     font-size: 1.5em;
     animation: fade-in 2.5s ease-in;
+}
+
+.top-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hover-effect:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.contact-address {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-address h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ff6f61;
+}
+
+.contact-address p {
+    margin: 5px 0 0;
+    font-size: 1em;
 }
 
 section {
@@ -55,26 +97,9 @@ ul li {
 
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.7);
     margin-top: 50px;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.social-links img {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.hover-effect:hover img {
-    transform: scale(1.2);
-    opacity: 0.8;
 }
 
 /* Animations */
