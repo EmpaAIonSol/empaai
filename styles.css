@@ -121,16 +121,6 @@ ul li {
     text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
 }
 
-.hover-text {
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.hover-text:hover {
-    transform: translateY(-5px);
-    color: #00bfff;
-    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
-}
-
 footer {
     text-align: center;
     padding: 20px;
