@@ -1,11 +1,12 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
     overflow-x: hidden;
     position: relative;
+    background: rgba(0, 0, 0, 0.8); /* Ciemne tło dla lepszej czytelności */
 }
 
 .background {
@@ -18,10 +19,10 @@ body {
     background-size: cover;
     background-position: center;
     z-index: -1;
+    opacity: 0.7; /* Przezroczyste tło */
 }
 
 header {
-    background: rgba(0, 0, 0, 0.5);
     padding: 60px 20px 40px;
     text-align: center;
     animation: slide-down 1s ease-out;
@@ -88,10 +89,28 @@ header p {
     text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
 }
 
+#copy-button {
+    background: #00bfff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#copy-button:hover {
+    background: #0099cc;
+}
+
+main {
+    padding: 20px;
+}
+
 section {
     padding: 40px;
     margin: 20px auto;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     max-width: 800px;
@@ -100,9 +119,30 @@ section {
 
 h2 {
     color: #00bfff;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
     text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #00bfff, #ff6f61);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+}
+
+h2:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 ul {
@@ -118,6 +158,16 @@ ul li {
 
 .emoji {
     font-size: 1.2em;
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+}
+
+.hover-text {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hover-text:hover {
+    transform: translateY(-5px);
+    color: #00bfff;
     text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
 }
 
